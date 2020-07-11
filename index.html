@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="styles.css?v=<?php echo time(); ?>"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css"
+      integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX"
+      crossorigin="anonymous"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <title>WheelBox</title>
+  </head>
+  <body>
+    <!--navbar-->
+    <nav
+      id="navigation"
+      class="navbar sticky-top navbar-expand-lg navbar-darker justify-content-between"
+    >
+      <div class="navbar-collapse" id="navbarTogglerDemo01">
+        <a class="navbar-brand" style="color: aliceblue;">
+          <img
+            src="scooter.svg"
+            height="30px"
+            class="animateit"
+            style="margin-left: 20%;"
+            alt=""
+          />
+          ICOS Rentals
+        </a>
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0"></ul>
+        <ul
+          class="navbar-nav"
+          style="
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+          "
+        >
+          <li class="nav-item active">
+            <a
+              class="nav-link"
+              style="color: aliceblue; margin-left: 2%;"
+              href="#bg"
+              ><strong>Home</strong> <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              style="color: aliceblue; margin-left: 2%;"
+              href="#start"
+              ><strong>Link</strong></a
+            >
+          </li>
+          <li class="nav-item" style="width: 100px;">
+            <a
+              class="nav-link"
+              style="color: aliceblue; margin-left: 2%;"
+              href="#why-us"
+              ><strong>Why Us?</strong>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!--scrolling effect added-->
+    <section class="hero" id="bg">
+      <div class="scooterimg">
+        <img data-sound="vespa" src="02.png" height="350px" alt="scooter" />
+      </div>
+
+      <blockquote class="sometext">Lets KickStart!</blockquote>
+      <div class="popup">
+        Ride ur way with us...<br />
+        Skip Walking <br />
+        Download our app
+
+        <div
+          style="
+            width: 25vw;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            position: relative;
+            right: 2%;
+          "
+        >
+          <a href="#"
+            ><img
+              class="buttonup"
+              src="android.png"
+              alt="Download link for android"
+              height="40vh"
+              width="150vw"
+          /></a>
+
+          <a href="#">
+            <img
+              class="buttonup"
+              src="ios.png"
+              alt="Download link for ios"
+              height="40vh"
+              width="150vw"
+            />
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!--after front scroller-->
+
+    <div
+      class="info"
+      data-aos="fade-left"
+      data-aos-duration="500"
+      data-aos-easing="ease"
+      data-aos-offset="200"
+    >
+      <div>
+        do you love the rain does it make you dance when your are drunk with
+        your friends at a party.
+      </div>
+    </div>
+    <div style="background-color: white;">
+      <div class="container">
+        <div class="our" data-aos="fade-down">
+          Our Scooter
+        </div>
+        <div class="container">
+          <div class="ourScooter" data-aos="fade-up">
+            Sustainable - spanning countries & <br />
+            communties.
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="demo"
+      data-sound="vespa"
+      id="scooter"
+      style="
+        background-color: white;
+        justify-content: center;
+        padding-top: -20px;
+        padding-bottom: 20px;
+        align-self: center;
+        display: flex;
+        width: 100%;
+        @media screen and (max-width: 800px) : align-items:center;
+      "
+    >
+      <img src="02.png" height="500px" />
+    </div>
+
+    <!--next scroll effect-->
+    <section class="phone" id="start">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-4">
+            <span class="track1 t1" id="one"> </span>
+            Download
+            <div class="line"></div>
+            <span class="track1 t2" id="two"> </span>
+            Scan
+            <div class="line"></div>
+            <span class="track1 t3" id="three"> </span>
+            Ride
+          </div>
+          <div class="col-sm-4" data-aos="fade-in">
+            <img class="trackImage" style="object-fit: fill;" />
+          </div>
+          <div class="col-sm-4">
+            <br /><br /><br /><br />
+            <p class="trackText" data-aos="fade-in"></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--about us -->
+    <section id="why-us">
+      <div class="container" style="position: relative;">
+        <h2 data-aos="fade-down">Why WheelBox?</h2>
+        <div class="row" style="display: inline-block;">
+          <span data-aos="fade-down" data-aos-duration="1s">
+            <h3>Teams</h3>
+            <p>
+              Our strong sense of identification with client projects means that
+              we are constantly striving to provide solutions, even for issues
+              they aren’t yet aware of. To this end, we adopt a progressive
+              approach to technology and marketing techniques.
+            </p>
+          </span>
+
+          <span data-aos="fade-down" data-aos-duration="1s">
+            <h3>True Partners</h3>
+            <p>
+              Our strong sense of identification with client projects means that
+              we are constantly striving to provide solutions, even for issues
+              they aren’t yet aware of. To this end, we adopt a progressive
+              approach to technology and marketing techniques.
+            </p>
+          </span>
+
+          <span data-aos="fade-up" data-aos-duration="1s">
+            <h3>Global Know-How</h3>
+            <p>
+              Our strong sense of identification with client projects means that
+              we are constantly striving to provide solutions, even for issues
+              they aren’t yet aware of. To this end, we adopt a progressive
+              approach to technology and marketing techniques.
+            </p>
+          </span>
+          <div
+            style="
+              border: 1x solid red;
+
+              position: relative;
+              left: 38vw;
+              bottom: 10vh;
+              scroll-behavior: smooth 2s;
+            "
+          >
+            <a href="#">
+              <img
+                src="arrow.png"
+                height="60vh"
+                width="60vw"
+                style="cursor: pointer;"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- <audio id="vespa" src="Bb.mp3"></audio>  -->
+
+    <!-- Import the component -->
+    <!--tween timeline and scrollmagic-->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"
+      integrity="sha256-lPE3wjN2a7ABWHbGz7+MKBJaykyzqCbU96BJWjio86U="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js"
+      integrity="sha256-fIkQKQryItPqpaWZbtwG25Jp2p5ujqo/NwJrfqAB+Qk="
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"
+      integrity="sha512-HzAEuXwhLxwm/Jj+5ecdjzrRVrjuh2ZeIxyT1Ln37TO5pWNMnKBuU7cfd1wvRQ/k86w1oC174Yk1T7aRlBpIcA=="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js"
+      integrity="sha512-A98SmLRZISk4eIxQBeCm8k0jAcwN3A3lBx4hr7baoMpV1VpxcxlZIhi5fJIZN50sQ5RlCzx8yV+Voy2cR6x0aA=="
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="script.js"></script>
+    <script src="scrollFix.js"></script>
+
+    <!--material bootstrap-->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js"
+      integrity="sha384-fA23ZRQ3G/J53mElWqVJEGJzU0sTs+SvzG8fXVWP+kJQ1lwFAOkcUOysnlKJC33U"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js"
+      integrity="sha384-CauSuKpEqAFajSpkdjv3z9t8E7RlpJ1UP0lKM/+NdtSarroVKu069AlsRPKkFBz9"
+      crossorigin="anonymous"
+    ></script>
+    <!--jquery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <script
+      src="https://code.jquery.com/ui/1.11.3/jquery-ui.min.js"
+      integrity="sha256-xI/qyl9vpwWFOXz7+x/9WkG5j/SVnSw21viy8fWwbeE="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.js"
+      integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+      crossorigin="anonymous"
+    ></script>
+
+    <!--animate on scroll-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $(window).scroll(function () {
+          if ($(this).scrollTop() > 0) {
+            $("nav").css({ opacity: "0.4" });
+          } else {
+            $("nav").css({ opacity: "1" });
+          }
+        });
+      });
+      // $(document).ready(function(){
+      //     $(window).scroll(function(){
+      //         if($(this).scrollTop()>0){
+      //             $('.main').css({"opacity":"0"})
+      //         }
+      //         else{
+      //             $('.main').css({"opacity":"1"})
+      //         }
+      //     })
+      // })
+
+      var previous = 0;
+
+      $(window).scroll(function () {
+        var scrollH = $(this).scrollTop();
+        if (previous < scrollH && scrollH < $(".hero").height()) {
+          $(".image").animate({ right: scrollH * 8 + "%" });
+          // $('.image').css({'display':'flex','align-items':'left','justify-content':'flex-start'})
+        } else {
+          $(".image").css({
+            "align-items": "center",
+            "justify-content": "center",
+            display: "flex",
+          });
+          // $('.image').animate({'left': scrollH*8 + '%'})
+        }
+        previous = scrollH;
+      });
+
+      var scrollPhone = $(".phone").offset();
+      var height = $(".phone").height();
+
+      $(window).scroll(function () {
+        var scroll = $(this).scrollTop();
+        if (scroll - scrollPhone.top < -(height / 4)) {
+          $("#one").css({ "background-color": "green" });
+          $(".trackImage").attr("src", "scooter.svg");
+          $(".trackText").html("Download our App to get cool e scooters");
+        } else {
+          $("#one").css({ "background-color": "black" });
+        }
+      });
+
+      $(window).scroll(function () {
+        var scroll = $(this).scrollTop();
+        if (
+          scroll - scrollPhone.top > -(height / 4) &&
+          scroll - scrollPhone.top < height / 6
+        ) {
+          $("#two").css({ "background-color": "green" });
+          $(".trackImage").attr("src", "scooter.svg");
+          $(".trackText").html("This Is Gospel");
+        } else {
+          $("#two").css({ "background-color": "black" });
+        }
+      });
+
+      $(window).scroll(function () {
+        var scroll = $(this).scrollTop();
+        if (
+          scroll - scrollPhone.top > height / 6 &&
+          scroll - scrollPhone.top < height / 3
+        ) {
+          $("#three").css({ "background-color": "green" });
+          $(".trackImage").attr("src", "scooter.svg");
+          $(".trackText").html("I Think It Works");
+        }
+        // if(scroll -scrollPhone.top > height/3 ){
+        //   $('#start').css({"position":"absolute"})
+        // }
+        else {
+          $("#three").css({ "background-color": "black" });
+        }
+      });
+      $(".trackImage").attr("src", "scooter.svg");
+    </script>
+    <script type="text/javascript">
+      AOS.init();
+    </script>
+  </body>
+</html>
